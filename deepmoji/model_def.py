@@ -102,6 +102,7 @@ def deepmoji_architecture(nb_classes, nb_tokens, maxlen, feature_output=False, e
         # add the attention weights to the outputs if required
         outputs.append(weights)
 
+
     return Model(inputs=[model_input], outputs=outputs, name="DeepMoji")
 
 
